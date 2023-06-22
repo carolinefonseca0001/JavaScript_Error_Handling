@@ -1,17 +1,43 @@
-// TODO: Enable strict mode
+// Exercise 1
+"use strict";
 
-// TODO: Fix the following parameter list
-function parseToJSON(data, data) {
+//Exercise 2
+function parseToJSON(data) {
   // TODO: Add a try/catch block to
   // attempt to convert 'data' to JSON
-  return JSON.parse(data); 
-  
+  return JSON.parse(data);
+
   // TODO: if an exception is raised
   // print the error to the console
   // and return null
 }
 
-let failData = "<h1>Hello World!</h1>"
+//Exercise 3
+// TODO: Fix the following parameter list
+function parseToJSON(data) {
+  try {
+    return JSON.parse(data);
+  } catch (error) {
+    console.error;
+  }
+
+  function parseToJSON(value) {
+    try {
+      let Value = "data";
+      return JSON.parse(Value);
+    } catch (error) {
+      console.error;
+      console.log(failData);
+      return null;
+    }
+  }
+  //Exercise 4
+  // TODO: if an exception is raised
+  // print the error to the console
+  // and return null
+}
+
+let failData = "<h1>Hello World!</h1>";
 
 let passData = JSON.stringify({ success: true });
 
